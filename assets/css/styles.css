@@ -60,9 +60,6 @@ font-family: "Quicksand", sans-serif;
   background-color: #000000;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-
 
 
 }
@@ -109,6 +106,7 @@ header h2{
   font-size: 30px;
   padding: 20px;
   font-family: "Quicksand", sans-serif;
+  margin-bottom: 20px
 }
 nav ul{
   margin: 0;
@@ -117,11 +115,13 @@ nav ul{
 }
 nav a{
   display: block;
-  margin-bottom: 10px;
   text-align: center;
   font-weight: bold;
   color: white;
-  letter-spacing: 1px
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-size: 1.2em
+
 }
 nav a:hover{
   text-decoration: line-through;
@@ -177,7 +177,7 @@ a.effect-box:hover:before {
 .hero{
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  margin-top: 110px;
   align-items: center;
   height: auto;
 
@@ -187,6 +187,7 @@ a.effect-box:hover:before {
   color: #f529fd;
   padding-bottom: 100px;
   text-shadow: 0px 0px 50px;
+  width: 100%;
 }
 .hero a{
   font-size: 15px
@@ -210,17 +211,16 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 60px;
   height: auto;
-  width: 90%
+
 
 }
 footer p{
   align-self: center;
   font-weight: bold;
   font-size: 20px;
-  padding-bottom: 60px
-
+  padding-bottom: 60px;
 
 
 }
@@ -266,10 +266,10 @@ Media Queries\
   nav a{
     padding: 5px;
     font-size: 1.5em;
-
   }
 }
-@media only screen and (min-width: 768px){
+
+@media (min-width: 768px){
 
   header {
     display: flex;
@@ -282,27 +282,13 @@ Media Queries\
     font-size: 1.2em;
   }
 
-  }
-  .hero h1 {
-    font: bold 200px "Give You Glory", sans-serif;
-    color: #f529fd;
-
-  }
-
 /* Header Styles */
-
 
 @keyframes fadein {
   100% {
     opacity: 1;
   }
 }
-
-header a {
-margin-bottom: 100px
-
-}
-
 /*Hero Styles*/
 
 .hero h1 {
@@ -331,7 +317,6 @@ footer {
   flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #000000;
 	color: #fff;
 	padding: 10px 0;
   flex-grow: 1;
@@ -342,4 +327,5 @@ footer p {
 	font-size: 24px;
 	align-self: center;
   margin-bottom: 100px
+}
 }
